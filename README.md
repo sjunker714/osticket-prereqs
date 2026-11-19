@@ -70,8 +70,8 @@ https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
 7) Now I need to install the PHP Manager from the osTicket-installation-files folder. Double-click the program, select "Next", then select "I Agree", then select "Install".
 8) The next program I need to install is rewrite_amd64_en-US from the osTicket-installation-files folder. Double-click, accept the terms, and select "Next" until I get to select "Install".
 9) Next, I need to create a folder in the C: drive called PHP.
-   - Open File Explorer, go to This PC, select Windows C:, then right-click, New folder, and name it PHP.
-10) My next step is to unzip the php-7.3.8-nts-Win32-VC15-x86 folder.
+   - Open File Explorer, go to This PC, select Windows C:, then right-click, select "New folder", and name it PHP.
+10) The next step is to unzip the php-7.3.8-nts-Win32-VC15-x86 folder.
    - Right-click "Extract All" and I am going to extract this to the folder I just created, C:/PHP.
 11) After that is finished, I am going to download VC_redist_x86 from my osTicket-installation-files folder.
    - Double-click, check the box to agree to the terms, and  click "Install".
