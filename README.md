@@ -68,14 +68,11 @@ https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
    - "World Wide Web Services": Expand this folder.
    - "CGI": Check the box and select OK
 7) Now I need to install the PHP Manager from the osTicket-installation-files folder. Double-click the program, select "Next", then select "I Agree", then select "Install".
-
 8) The next program I need to install is rewrite_amd64_en-US from the osTicket-installation-files folder. Double-click, accept the terms, and select "Next" until I get to select "Install".
-
 9) Next, I need to create a folder in the C: drive called PHP.
    - Open File Explorer, go to This PC, select Windows C:, then right-click, New folder, and name it PHP.
 10) My next step is to unzip the php-7.3.8-nts-Win32-VC15-x86 folder.
    - Right-click "Extract All" and I am going to extract this to the folder I just created, C:/PHP.
-
 11) After that is finished, I am going to download VC_redist_x86 from my osTicket-installation-files folder.
    - Double-click, check the box to agree to the terms, and  click "Install".
 12) Once completed, I am going to download mysql-5.5.62-win32 from my osTicket-installation-files folder.
@@ -89,5 +86,5 @@ https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
    - Double-click PHP Manager, then click "Register new PHP version", browse to C:/PHP that we created, and select the file php-cgi.
    - Restart IIS Manager. Right-click on osTicket on the right-hand side and select "Stop"; right-click osTicket after a few seconds and select "Start". 
 14) Once that is restarted, the next step is to extract the osTicket-v1.15.8 folder in the osTicket-installation-files folder. 
-   - Right-click "Extract All". This can extract inside the osTicket-installation-files folder. 
+   - Right-click "Extract All". This can extract it inside the osTicket-installation-files folder. 
 15) Once extracted, I need to move the "upload" folder to C:\inetpub\wwwroot. Then rename the folder to "osTicket".
