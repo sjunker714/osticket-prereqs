@@ -108,4 +108,3 @@ https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
       - "Enable or disable an extension"
       - Find "php_imap.dll," "php_intl.dll", and "php_opcache.dll"
       - Right-click and select "Enable" for each one.
-
