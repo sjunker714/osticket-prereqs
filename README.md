@@ -7,6 +7,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Video Demonstration</h2>
+
 - ### [YouTube: How to create a VM with Azure](https://www.youtube.com/watch?v=USBFyDUkviw&t=8s)
 
 - ### [YouTube: How to Install osTicket with Prerequisites](https://www.youtube.com/watch?v=5z-nGB86tYQ)
