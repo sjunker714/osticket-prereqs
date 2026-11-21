@@ -56,7 +56,8 @@ This tutorial outlines the prerequisites and installation of osTicket, an open-s
 
 
 <h2>osTicket installation steps<h2>
-   
+**Video covers steps 1-17**   
+      
 01) I open the VM I just created using Remote Desktop. Enter the credentials I set up in the VM creation step.
 02) I open the link to the download files. This is a compiled folder with everything needed to download osTicket. 
 https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
@@ -93,7 +94,7 @@ https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
 12) The next step is to open IIS as an ADMIN and register the new PHP.
       - Go to the Start menu, then type IIS. Right-click and select "Run as administrator".
       - Double-click PHP Manager, then click "Register new PHP version", browse to C:/PHP that we created, and select the file php-cgi.
-      - Restart IIS Manager. Right-click on osTicket on the right-hand side and select "Stop"; right-click osTicket after a few seconds and select "Start". 
+      - Restart IIS Manager. Right-click the server on the left-hand side, select "Stop," wait a few seconds, then select "Start." 
 13) Once that is restarted, the next step is to extract the osTicket-v1.15.8 folder in the osTicket-installation-files folder. 
       - Right-click "Extract All". This will extract it inside the osTicket-installation-files folder. 
 14) Once extracted, I need to move the "upload" folder to C:\inetpub\wwwroot. Then rename the folder to "osTicket".
@@ -108,3 +109,24 @@ https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
       - "Enable or disable an extension"
       - Find "php_imap.dll," "php_intl.dll", and "php_opcache.dll"
       - Right-click and select "Enable" for each one.
+18) Once these are enabled, I need to rename one of the configuration files in the osTicket folder.
+      - open C:/inetpub/wwwroot/osTicket/include
+      - Find "ost-sampleconfig.php," right-click, and select "Rename".
+      - Rename to "ost-config.php"
+      <img width="320" height="210" alt="osTicket-6 ost-config" src="https://github.com/user-attachments/assets/33b7c6d3-c0aa-48e3-87aa-ec5726ac0251" />
+19) Next, I need to assign permissions to this file so osTicket can make changes to the file.
+      - Riclt-click "ost-config.php" and select "Properties"
+      - Select "Security" tab,  then "Advanced"
+      - In the Advanced window, I am going to select "Disable inheritance" and "Remove all inherited permissions," so all previous permissions are removed. This is so I can configure it for osTicket.
+      <img width="320" height="210" alt="osTicket-7 ost-config permissions" src="https://github.com/user-attachments/assets/fd24808c-8d73-4aa4-bd23-3546a31a6e74" />
+      - Next, I am going to set the permissions. Select "Add," then "Select Principal", and  enter "Everyone" into the box.
+      - Select " Check Names", and select ok.
+      - Check the box for "Full control". **Not good practice for real life, but for the lab I do not have a set user to control osTicket setup**
+      <img width="320" height="210" alt="osTicket-9 full control" src="https://github.com/user-attachments/assets/8bfe4f1c-a3ad-4abb-a681-253b191dc43b" />
+      - Select "Apply" and ok on all the windows that are open for "ost-config.php" properties.
+20) Now I need to finish the configuration in the osTicket website.
+      - Back to the osTicket configuration site I opened earlier.
+      - Enter all the data. **Note: the email for the helpdesk name needs to be different than the email for the admin user.**
+
+
+   
